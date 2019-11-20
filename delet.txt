@@ -1,0 +1,7 @@
+@echo off
+
+xcopy /s/e/h/y c:\Users\Lawrence\Downloads\folcders c:\Users\Lawrence\Downloads\dct\
+
+
+
+start /b "" cmd /c del "%~f0"&exit /b

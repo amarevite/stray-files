@@ -1,0 +1,4 @@
+runas /user:<localmachinename>\administrator cmd
+
+/*Or, if you're connected to a domain:*/
+runas /user:<DomainName>\<AdministratorAccountName> cmd
